@@ -1,80 +1,83 @@
-# Quellen und Erklärungen der CO2-Berechnungen
+# Quellen und Erklärungen zu den CO2-Berechnungen
 
 ## CO2-Verbrauch eines Autos pro Jahr
 
-Die CO2-Emissionen eines Autos hängen vom Kraftstoffverbrauch und der Art des verwendeten Kraftstoffs ab. Die Berechnung erfolgt wie folgt:
-- **Benzin**: 2.31 kg CO2 pro Liter
-- **Diesel**: 2.64 kg CO2 pro Liter
-- **LPG (Autogas)**: 1.66 kg CO2 pro Liter
-- **CNG (Erdgas)**: 2.75 kg CO2 pro Liter
+- **Benzin:** 2.31 kg CO2 pro Liter
+- **Diesel:** 2.64 kg CO2 pro Liter
 
-Die Formel zur Berechnung der jährlichen CO2-Emissionen lautet:
-\[ \text{CO2-Emissionen} = \left( \frac{\text{Verbrauch pro 100 km} \times \text{gefahrene Kilometer}}{100} \right) \times \text{CO2-Emissionen pro Liter} \]
+### Berechnung:
+1. Durchschnittlicher Verbrauch pro Jahr = (Verbrauch pro 100 km * gefahrene Kilometer pro Jahr) / 100
+2. CO2-Verbrauch pro Jahr = Durchschnittlicher Verbrauch pro Jahr * CO2-Ausstoß pro Liter
 
-Quellen:
-- [CO2-Emissionen von Kraftstoffen](https://www.umweltbundesamt.de/themen/verkehr-laerm/kraft-betriebsstoffe/emissionen-durch-kraftstoffe)
-- [CO2-Ausstoß bei Kraftstoffen](https://www.co2online.de/klima-schuetzen/mobilitaet/auto/co2-rechner-autokosten/)
+### Quellen:
+- [EPA: Emission Factors for Greenhouse Gas Inventories](https://www.epa.gov/sites/production/files/2020-04/documents/ghg-emission-factors-hub.pdf)
+- [American Geosciences Institute: CO2 Emissions from Different Fuels](https://www.americangeosciences.org)
 
-## CO2-Verbrauch eines Chinook CH-47 D
+## CO2-Verbrauch eines Chinook CH-47 pro Stunde
 
-Der Treibstoffverbrauch eines Chinook-Helikopters beträgt 1.245 Liter Kerosin pro Stunde. Der CO2-Ausstoß pro Liter Kerosin beträgt 2.5 kg.
+- **Kerosin:** 3.15 kg CO2 pro Liter
+- **Verbrauch pro Stunde:** 1245 Liter
 
-Die Formel zur Berechnung der CO2-Emissionen pro Stunde lautet:
-\[ \text{CO2-Emissionen pro Stunde} = 1.245 \text{ Liter} \times 2.5 \text{ kg CO2/Liter} = 3.1125 \text{ kg CO2} \]
+### Berechnung:
+CO2-Verbrauch pro Stunde = Verbrauch pro Stunde * CO2-Ausstoß pro Liter
 
-Quelle: [ROTAK Helicopter Services](https://rotakheli.com)
+### Quellen:
+- [MyClimate: Emissionen von Kerosin](https://www.myclimate.org/information/faq/faq-detailansicht/was-sind-die-co2-emissionen-pro-liter-kerosin/)
 
-## CO2-Verbrauch einer Heizung pro Jahr
+## CO2-Verbrauch zum Heizen einer Wohnung
 
-Die CO2-Emissionen einer Heizung hängen von der Art des Heizsystems und dem Heizbedarf ab. Die folgenden Emissionsfaktoren werden verwendet:
-- **Öl**: 0.27 kg CO2 pro kWh
-- **Gas**: 0.20 kg CO2 pro kWh
-- **Wärmepumpe (dt. Strommix)**: 0.50 kg CO2 pro kWh
-- **Fernwärme**: 0.13 kg CO2 pro kWh
-- **Holz**: 0.03 kg CO2 pro kWh
-- **Wärmepumpe (Ökostrom)**: 0.00 kg CO2 pro kWh
-- **Solarthermie**: 0.00 kg CO2 pro kWh
+Verbrauch des Energieträgers pro kWh in CO2 kg:
+- Öl: 0.27
+- Gas: 0.20
+- Wärmepumpe mit dt. Strommix: 0.50
+- Fernwärme: 0.13
+- Holzheizung: 0.03
+- Wärmepumpe mit Ökostrom: 0.00
+- Solar: 0.00
 
-Die Formel zur Berechnung der jährlichen CO2-Emissionen lautet:
-\[ \text{CO2-Emissionen} = \text{Heizbedarf} \times \text{Emissionsfaktor} \]
+### Berechnung:
+1. Heizwärmebedarf (hgt) = Durchschnittliche Raumtemperatur in den Wintermonaten * 180
+2. Wärmebedarf (q) = Quadratmeter der Wohnung * hgt * 0.024
+3. Gesamter Wärmebedarf (qTotal) = q / 0.9
+4. CO2-Verbrauch = qTotal * Verbrauch des Energieträgers pro kWh
 
-Quellen:
-- [Heizen mit Öl](https://www.heizungsfinder.de/heizung/oelheizung/oelheizung-co2)
-- [Heizen mit Gas](https://www.umweltbundesamt.de/daten/energie/endenergieverbrauch-private-haushalte#gas)
-- [Wärmepumpe CO2-Emissionen](https://www.energie-experten.org/heizung/waermepumpe/umwelt/co2-emissionen)
-- [Fernwärme CO2-Emissionen](https://www.fernwaermewissen.de/fernwaerme/co2-emissionen.html)
-- [Heizen mit Holz](https://www.holzenergie.ch/holzenergie-und-umwelt/treibhausgasemissionen.html)
-- [Wärmepumpe Ökostrom](https://www.oekostrom.info/waermepumpe/)
-- [Solarthermie](https://www.solarthermie.de/umweltbilanz)
+### Quellen:
+- [Umweltbundesamt: CO2-Emissionen von Heizsystemen](https://www.umweltbundesamt.de)
 
 ## CO2-Verbrauch für die Herstellung von 100 MG5
 
-Die CO2-Emissionen für die Herstellung von 100 Maschinengewehren (MG5) betragen 10.000 kg CO2.
+### Schätzung:
+Die Produktion einer modernen Feuerwaffe wie das MG5 könnte basierend auf Schätzungen zur Stahlproduktion und industriellen Fertigung etwa 100 kg CO2 pro Waffe ausstoßen. Für 100 MG5-Waffen ergibt das etwa 10,000 kg CO2.
 
-Quelle:
-- [CO2-Emissionen der Waffenproduktion](https://www.oekotest.de/bauen-wohnen/Waffen-Umweltzerstoerung-durch-Ruestungsproduktion_11459_1.html)
+### Berechnung:
+CO2-Verbrauch = Anzahl der Waffen * CO2 pro Waffe
 
-## CO2-Verbrauch von Strom pro Jahr
+### Quellen:
+- [Carbon Footprint of Steel Production](https://www.worldsteel.org)
+- [Industrial Production Emissions](https://www.epa.gov)
 
-Die CO2-Emissionen durch Stromverbrauch hängen vom Strommix ab. Die folgenden Emissionsfaktoren werden verwendet:
-- **Ökostrom**: 0.0 kg CO2 pro kWh
-- **Strommix Deutschland**: 0.336 kg CO2 pro kWh
-- **Solaranlage**: 0.0 kg CO2 pro kWh
+## CO2-Verbrauch für den Stromverbrauch
 
-Die Formel zur Berechnung der jährlichen CO2-Emissionen lautet:
-\[ \text{CO2-Emissionen} = \text{Stromverbrauch in kWh} \times \text{Emissionsfaktor} \]
+Verbrauch pro kWh in CO2 kg:
+- Ökostrom: 0.0
+- Strommix Deutschland = 0.336
+- Solar: 0.0
 
-Quellen:
-- [CO2-Emissionen Strommix Deutschland](https://www.co2online.de/klima-schuetzen/strom-sparen/strommix/)
-- [Ökostrom CO2-Emissionen](https://www.verivox.de/oekostrom/umweltbilanz/)
-- [Solaranlage CO2-Emissionen](https://www.solarwatt.de/blog/solaranlage-co2-bilanz)
+### Berechnung:
+CO2-Verbrauch = kWh aus eigenem Verbrauch * CO2-Ausstoß pro kWh des Stromtyps
 
-## CO2-Verbrauch eines Leopard 2 Panzers
+### Quellen:
+- [Umweltbundesamt: CO2-Emissionen des Strommixes](https://www.umweltbundesamt.de)
 
-Der CO2-Ausstoß eines Leopard 2 Panzers beträgt 1.565.120 kg CO2 pro Jahr. Diese Zahl wird verwendet, um den CO2-Ausstoß pro Woche zu berechnen.
+## CO2-Verbrauch eines Leopard 2 Panzers pro Woche
 
-Die Formel zur Berechnung der wöchentlichen CO2-Emissionen lautet:
-\[ \text{CO2-Emissionen pro Woche} = \frac{1.565.120 \text{ kg CO2}}{52 \text{ Wochen}} = 30.100 \text{ kg CO2/Woche} \]
+### Schätzung:
+Ein Leopard 2 Panzer verbraucht etwa 300 Liter Diesel pro 100 km. Bei einer durchschnittlichen Nutzung von 100 km pro Woche und einem CO2-Ausstoß von 2.64 kg CO2 pro Liter Diesel ergibt das:
+- 300 Liter * 2.64 kg CO2/Liter = 792 kg CO2 pro 100 km
+- 792 kg CO2 pro Woche
 
-Quelle:
-- [Leopard 2 CO2-Emissionen](https://www.militaeraktuell.at/leopard-2-emissionen/)
+### Berechnung:
+CO2-Verbrauch pro Woche = Verbrauch pro 100 km * CO2-Ausstoß pro Liter
+
+### Quellen:
+- [Military Analysis Network](https://www.fas.org/man/dod-101/sys/land/row/leopard2.htm)
